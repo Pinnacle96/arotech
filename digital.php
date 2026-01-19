@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arotech Digital | AROTECH POWER LIMITED</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#2aa7ff',
+            brandTeal: '#2ed0f3',
+            brandGray: '#7a7a7a',
+            brandOrange: '#ff7b2e'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(90deg, #2aa7ff, #7a7a7a, #ff7b2e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hover-lift { transition: all 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <?php $current='digital'; include __DIR__.'/includes/header.php'; ?>
+
+  <!-- Hero Section -->
+  <!-- To use a local image, change the style below to: style="background-image: url('assets/images/digital-hero.jpg');" -->
+  <section class="relative bg-cover bg-center py-32" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">
+        <span class="text-brandBlue">Arotech Digital</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+        Technology That Supports Infrastructure - Digital platforms for business automation, company management, and operational efficiency
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact" class="bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg">
+          Get Digital Solutions
+        </a>
+        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg hover:bg-white hover:text-brandBlue transition-colors">
+          View Digital Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Services -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Digital Solutions <span class="gradient-text">That Drive Business Growth</span>
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our subsidiary Arotech Digital develops secure, scalable web and mobile applications that transform business operations and company management
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Web Applications -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandTeal rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Web Applications</h3>
+          <p class="text-gray-600">Custom web platforms for business process automation, company management systems, and digital transformation solutions</p>
+        </div>
+
+        <!-- Mobile Applications -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandOrange to-brandBlue rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Mobile Applications</h3>
+          <p class="text-gray-600">Native mobile apps for business operations, customer engagement, and enterprise mobility solutions</p>
+        </div>
+
+        <!-- Monitoring Dashboards -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandGray to-brandBlue rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2极 v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Monitoring Dashboards</h3>
+          <p class="text-gray-600">Real-time business intelligence dashboards for performance tracking, analytics, and operational insights</p>
+        </div>
+
+        <!-- Client Portals -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandOrange rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Client Portals</h3>
+          <p class="text-gray-600">Secure client portals for business collaboration, project management, and customer relationship management</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-50 to-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Seamless <span class="gradient-text">Business Integration</span>
+        </h2>
+        <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+          Our digital solutions integrate perfectly with business operations, providing comprehensive technology ecosystems for modern companies
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <svg class="w-10 h-10 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Business Automation</h3>
+            <p class="text-gray-600">Streamlined workflows and automated processes for increased operational efficiency</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <svg class="w-10 h-10 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Data Security</h3>
+            <p class="text-gray-600">Enterprise-grade security protocols and data protection for business information</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <svg class="w-10 h-10 text-brandGray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Scalability</h3>
+            <p class="text-gray-600">Modular solutions that grow with your business, from startups to enterprise level</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <?php include __DIR__.'/includes/footer.php'; ?>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

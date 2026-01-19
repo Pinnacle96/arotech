@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | AROTECH POWER LIMITED</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#2aa7ff',
+            brandTeal: '#2ed0f3',
+            brandGray: '#7a7a7a',
+            brandOrange: '#ff7b2e'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(90deg, #2aa7ff, #7a7a7a, #ff7b2e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hover-lift { transition: all 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <?php $current='services'; include __DIR__.'/includes/header.php'; ?>
+  <main>
+    <!-- Page Header -->
+    <!-- Use a local image by placing 'services-hero.jpg' in assets/images and setting: style="background-image: url('assets/images/services-hero.jpg');" -->
+    <section class="relative bg-gray-900 bg-cover bg-center py-32" style="background-image: url('assets/images/hero2.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+        <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+          We design and execute professional electrical systems, solar solutions, automation, surveillance, and digital platforms with precision engineering and innovative technology.
+        </p>
+      </div>
+    </section>
+    
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-gradient-to-r from-brandOrange/5 via-brandGray/5 to-brandBlue/5 rounded-2xl p-8 border border-gray-200">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandOrange to-brandOrange/70 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm2 2v3h4V6H6zm6 0v3h4V6h-4zm-6 5v3h4v-3H6zm6 0v3h4v-3h-4z"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800">Solar & Energy Solutions</h2>
+          </div>
+          <div class="h-1 rounded bg-gradient-to-r from-brandOrange via-brandGray to-brandBlue my-4"></div>
+          <p class="text-lg text-gray-700 mb-6">Custom-designed solar and hybrid power systems that reduce dependence on grid and generators while promoting sustainable energy solutions.</p>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Services Include:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Residential solar installations</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Commercial solar systems</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Hybrid inverter and battery storage</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Energy audits and optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-gradient-to-r from-brandBlue/5 via-brandGray/5 to-brandOrange/5 rounded-2xl p-8 border border-gray-200">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandBlue to-brandBlue/70 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800">Electrical Engineering & Power Systems</h2>
+          </div>
+          <div class="h-1 rounded bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange my-4"></div>
+          <p class="text-lg text-gray-700 mb-6">We design and execute professional electrical systems for residential and commercial buildings with precision and reliability.</p>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Services Include:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>House wiring (residential & commercial)</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>Electrical drawings and load analysis</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>Distribution boards and panels</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>Earthing and lightning protection</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>Preventive and corrective maintenance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-gradient-to-r from-brandGray/5 via-brandBlue/5 to-brandOrange/5 rounded-2xl p-8 border border-gray-200">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandGray to-brandGray/70 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800">Smart Homes & Automation</h2>
+          </div>
+          <div class="h-1 rounded bg-gradient-to-r from-brandGray via-brandBlue to-brandOrange my-4"></div>
+          <p class="text-lg text-gray-700 mb-6">Smart systems that offer convenience, efficiency, and control through innovative automation technology for modern living and working spaces.</p>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Services Include:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandGray"></div>
+              <span>Smart lighting and switches</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandGray"></div>
+              <span>Remote appliance control</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandGray"></div>
+              <span>Energy monitoring</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandGray"></div>
+              <span>Home and office automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-gradient-to-r from-brandBlue/5 via-brandOrange/5 to-brandGray/5 rounded-2xl p-8 border border-gray-200">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandBlue to-brandBlue/70 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800">Security & Surveillance Systems</h2>
+          </div>
+          <div class="h-1 rounded bg-gradient-to-r from-brandBlue via-brandOrange to-brandGray my-4"></div>
+          <p class="text-lg text-gray-700 mb-6">Professionally installed systems that protect people and property with advanced security technology and comprehensive monitoring solutions.</p>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Services Include:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>CCTV installation</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>Access control systems</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>Remote monitoring</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandBlue"></div>
+              <span>Maintenance and upgrades</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-gradient-to-r from-brandOrange/5 via-brandBlue/5 to-brandGray/5 rounded-2xl p-8 border border-gray-200">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandOrange to-brandOrange/70 flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2h-2.5l.5 2h4a1 1 0 010 2H6a1 1 0 010-2h4l.5-2H4a2 2 0 01-2-2V5z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800">Digital Solutions – Arotech Digital</h2>
+          </div>
+          <div class="h-1 rounded bg-gradient-to-r from-brandOrange via-brandBlue to-brandGray my-4"></div>
+          <p class="text-lg text-gray-700 mb-6">Technology solutions that connect systems and improve operations through innovative digital platforms and custom software development.</p>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Services Include:</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Web applications</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Mobile applications</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Monitoring dashboards</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-2 h-2 rounded-full bg-brandOrange"></div>
+              <span>Client portals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <?php include __DIR__.'/includes/footer.php'; ?>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

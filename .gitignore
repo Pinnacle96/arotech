@@ -1,0 +1,13 @@
+# Configuration files containing credentials
+config.php
+
+# Composer dependencies
+vendor/
+
+# Log files
+*.log
+contact_submissions.txt
+
+# System files
+.DS_Store
+Thumbs.db

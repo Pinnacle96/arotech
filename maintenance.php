@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maintenance Plans | AROTECH POWER LIMITED</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { 
+        extend: { 
+          colors: { 
+            brandBlue:'#2aa7ff', 
+            brandGray:'#7a7a7a', 
+            brandOrange:'#ff7b2e' 
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        } 
+      }
+    }
+  </script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(90deg, #2aa7ff, #7a7a7a, #ff7b2e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Navigation -->
+  <?php $current='maintenance'; include __DIR__.'/includes/header.php'; ?>
+
+  <!-- Hero Section -->
+  <!-- Use a local image by placing 'maintenance-hero.jpg' in assets/images and setting: style="background-image: url('assets/images/maintenance-hero.jpg');" -->
+  <section class="relative bg-gray-900 bg-cover bg-center py-32" style="background-image: url('assets/images/hero1.jpg');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Reliable Support Beyond Installation</h1>
+      <p class="text-lg text-gray-200 max-w-3xl mx-auto">
+        Our maintenance plans ensure systems remain safe, efficient, and fully functional over time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Maintenance Services -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Maintenance Services Include</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-brandBlue to-brandOrange rounded-full mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandBlue/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Routine Inspections</h3>
+          <p class="text-gray-600">
+            Regular check-ups to ensure all systems are operating at peak performance and safety standards.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandGray to-brandGray/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Fault Diagnosis</h3>
+          <p class="text-gray-600">
+            Expert troubleshooting and identification of issues before they become major problems.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandOrange to-brandOrange/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">System Optimization</h3>
+          <p class="text-gray-600">
+            Continuous improvements to ensure your systems operate at maximum efficiency and performance.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandOrange rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Priority Response</h3>
+          <p class="text-gray-600">
+            Quick response times and dedicated support for urgent maintenance needs and emergencies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Plans -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Available Plans</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-brandBlue to-brandOrange rounded-full mx-auto"></div>
+        <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+          Choose the maintenance plan that best fits your needs and ensures long-term reliability.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandBlue/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Residential Maintenance</h3>
+          <p class="text-gray-600">
+            Comprehensive maintenance for solar installations, home electrical systems, and security systems.
+          </p>
+          <div class="mt-6">
+            <span class="text-2xl font-bold text-brandBlue">From ₦25,000</span>
+            <p class="text-sm text-gray-500">per quarter</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandGray to-brandGray/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Commercial Maintenance</h3>
+          <p class="text-gray-600">
+            Professional maintenance for office buildings, retail spaces, and commercial facilities.
+          </p>
+          <div class="mt-6">
+            <span class="text-2xl font-bold text-brandBlue">From ₦45,000</span>
+            <p class="text-sm text-gray-500">per quarter</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandOrange to-brandOrange/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Institutional Maintenance</h3>
+          <p class="text-gray-600">
+            Specialized maintenance for schools, churches, hospitals, and government buildings.
+          </p>
+          <div class="mt-6">
+            <span class="text-2xl font-bold text-brandBlue">From ₦65,000</span>
+            <p class="text-sm text-gray-500">per quarter</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-r from-brandBlue to-brandOrange">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Ready for Reliable Maintenance?</h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Ensure your systems remain safe, efficient, and fully functional with our professional maintenance plans.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact" class="bg-white text-brandBlue px-8 py-3 rounded-full font-semibold hover-lift transition-all">
+          Get Started Today
+        </a>
+        <a href="services" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover-lift transition-all">
+          View Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <?php include __DIR__.'/includes/footer.php'; ?>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

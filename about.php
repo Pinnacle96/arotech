@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | AROTECH POWER LIMITED</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#2aa7ff',
+            brandTeal: '#2ed0f3',
+            brandGray: '#7a7a7a',
+            brandOrange: '#ff7b2e'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(90deg, #2aa7ff, #7a7a7a, #ff7b2e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hover-lift { transition: all 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <?php $current='about'; include __DIR__.'/includes/header.php'; ?>
+  
+  <!-- Page Header -->
+  <!-- To use a local image, change the style below to: style="background-image: url('assets/images/about-hero.jpg');" -->
+  <section class="relative bg-cover bg-center py-32" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">About Arotech</h1>
+      <p class="text-xl text-gray-200">Engineering excellence for modern living</p>
+    </div>
+  </section>
+
+  <!-- Who We Are -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            AROTECH POWER LIMITED is an engineering-led company providing electrical and smart infrastructure solutions from Lagos, Nigeria.
+          </p>
+          <p class="text-lg text-gray-600">
+            We exist to eliminate unsafe electrical work, unreliable power systems, and poorly executed installations by delivering professional, compliant, and future-ready solutions.
+          </p>
+        </div>
+        <div class="relative">
+          <div class="bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange p-1 rounded-2xl">
+            <div class="bg-gray-50 rounded-2xl p-8">
+              <div class="text-center">
+                <div class="text-4xl font-bold text-brandBlue mb-2">5+</div>
+                <div class="text-gray-600">Years of Excellence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandTeal rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+          <p class="text-gray-300">
+            To deliver safe, intelligent, and reliable electrical and technology solutions that improve how Nigerians live and work.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandOrange to-brandBlue rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+          <p class="text-gray-300">
+            To become one of Nigeria's most trusted electrical, solar, and smart infrastructure brands.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+        <p class="text-xl text-gray-600">The principles that guide everything we do</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandBlue to-brandTeal rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Safety First</h3>
+          <p class="text-sm text-gray-600">Prioritizing safety in every project and installation</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandTeal to-brandGray rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Engineering Excellence</h3>
+          <p class="text-sm text-gray-600">Delivering superior technical solutions</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandGray to-brandOrange rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Integrity & Transparency</h3>
+          <p class="text-sm text-gray-600">Honest communication and ethical practices</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandOrange to-brandBlue rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M13 2a1 1 0 011 1v4.267a1 1 0 001.445.832l2.445-1.334a1 1 0 011.11 1.628l-2.445 1.334A3 3 0 0015 11.733V13a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 012-2h1V4a2 2 0 012-2h6z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Innovation & Sustainability</h3>
+          <p class="text-sm text-gray-600">Embracing new technologies and sustainable practices</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandBlue to-brandOrange rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 极 0 0110 1.944 11.954 11.954 0 0117.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 极 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Reliability & Support</h3>
+          <p class="text-sm text-gray-600">Consistent quality and ongoing customer support</极>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-br from-blue-50 to-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Work With Us?</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+        Let's discuss how our engineering expertise can bring your project to life with safety and precision.
+      </p>
+      <a href="contact" class="bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg inline-block">
+        Get Started Today
+      </a>
+    </div>
+  </section>
+
+  <?php include __DIR__.'/includes/footer.php'; ?>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

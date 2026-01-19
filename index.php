@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AROTECH POWER LIMITED</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#2aa7ff',
+            brandTeal: '#2ed0f3',
+            brandGray: '#7a7a7a',
+            brandOrange: '#ff7b2e'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(90deg, #2aa7ff, #7a7a7a, #ff7b2e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hover-lift { transition: all 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <?php $current='index'; include __DIR__.'/includes/header.php'; ?>
+
+  <!-- Hero Section -->
+  <section class="relative h-[600px] overflow-hidden group">
+    <!-- Slider Container -->
+    <div id="heroSlider" class="relative w-full h-full">
+       
+       <!-- Slide 1: General / Smart Living -->
+       <!-- 
+            HOW TO USE A LOCAL IMAGE:
+            1. Place your image file (e.g., 'hero1.jpg') in the folder: c:\wamp64\www\arotech\assets\images\
+            2. Change the url() below to point to that file.
+               Example: style="background-image: url('assets/images/hero1.jpg');"
+       -->
+       <div class="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100" 
+            style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1920&q=80');">
+          <div class="absolute inset-0 bg-black/60"></div>
+          <div class="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto transform transition-all duration-1000 translate-y-0 opacity-100 slide-content">
+              <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+                Powering <span class="text-brandBlue">Smart Living</span>
+              </h1>
+              <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                Safe, intelligent, and future-ready electrical, solar, and smart technology solutions for homes and businesses across Nigeria.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact" class="bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg">
+                  Request a Quote
+                </a>
+                <a href="services" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg hover:bg-white hover:text-brandBlue transition-colors">
+                  View Our Services
+                </a>
+              </div>
+            </div>
+          </div>
+       </div>
+
+       <!-- Slide 2: Integrated Electrical -->
+       <!-- To use a local image, upload your image to 'assets/images/electrical.jpg' and change the style below to: style="background-image: url('assets/images/electrical.jpg');" -->
+       <div class="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" 
+            style="background-image: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80');">
+          <div class="absolute inset-0 bg-black/60"></div>
+          <div class="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+             <div class="max-w-4xl mx-auto transform transition-all duration-1000 translate-y-10 opacity-0 slide-content">
+              <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+                Integrated <span class="text-brandBlue">Electrical Systems</span>
+              </h1>
+              <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                Professional electrical engineering covering installation, maintenance, and complex infrastructure projects.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="services" class="bg-brandBlue text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg border-2 border-brandBlue">
+                  Our Expertise
+                </a>
+              </div>
+            </div>
+          </div>
+       </div>
+
+       <!-- Slide 4: Smart Technology -->
+       <!-- To use a local image, upload your image to 'assets/images/smart-home.jpg' and change the style below to: style="background-image: url('assets/images/smart-home.jpg');" -->
+       <div class="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" 
+            style="background-image: url('assets/images/hero1.jpg');">
+          <div class="absolute inset-0 bg-black/60"></div>
+          <div class="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+             <div class="max-w-4xl mx-auto transform transition-all duration-1000 translate-y-10 opacity-0 slide-content">
+              <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+                Intelligent <span class="text-brandTeal">Home Automation</span>
+              </h1>
+              <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                Connecting your world with intelligent automation and cutting-edge digital infrastructure.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="digital" class="bg-brandTeal text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg border-2 border-brandTeal">
+                  Digital Solutions
+                </a>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- Controls -->
+    <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
+    <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </button>
+
+    <!-- Indicators -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+      <button class="indicator w-3 h-3 rounded-full bg-white transition-all" onclick="goToSlide(0)"></button>
+      <button class="indicator w-3 h-3 rounded-full bg-white/50 transition-all" onclick="goToSlide(1)"></button>
+      <button class="indicator w-3 h-3 rounded-full bg-white/50 transition-all" onclick="goToSlide(2)"></button>
+    </div>
+  </section>
+
+  <!-- Slider Script -->
+  <script>
+    const slides = document.querySelectorAll('#heroSlider > div');
+    const indicators = document.querySelectorAll('.indicator');
+    const contents = document.querySelectorAll('.slide-content');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+      // Handle wrapping
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+
+      // Hide current
+      slides[currentSlide].classList.remove('opacity-100');
+      slides[currentSlide].classList.add('opacity-0');
+      
+      // Reset content animation
+      contents[currentSlide].classList.remove('translate-y-0', 'opacity-100');
+      contents[currentSlide].classList.add('translate-y-10', 'opacity-0');
+      
+      indicators[currentSlide].classList.remove('bg-white', 'w-8');
+      indicators[currentSlide].classList.add('bg-white/50', 'w-3');
+
+      // Update index
+      currentSlide = index;
+
+      // Show new
+      slides[currentSlide].classList.remove('opacity-0');
+      slides[currentSlide].classList.add('opacity-100');
+      
+      // Animate content
+      setTimeout(() => {
+        contents[currentSlide].classList.remove('translate-y-10', 'opacity-0');
+        contents[currentSlide].classList.add('translate-y-0', 'opacity-100');
+      }, 300); // Slight delay for better effect
+
+      indicators[currentSlide].classList.remove('bg-white/50', 'w-3');
+      indicators[currentSlide].classList.add('bg-white', 'w-8');
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+      resetInterval();
+    }
+
+    function resetInterval() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 6000);
+    }
+
+    // Event Listeners
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      nextSlide();
+      resetInterval();
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      prevSlide();
+      resetInterval();
+    });
+
+    // Initialize
+    slideInterval = setInterval(nextSlide, 6000);
+  </script>
+
+  <!-- Trust Indicators -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+        <div class="p-6">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandBlue to-brandTeal rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-700">Lagos-based engineering company</p>
+        </div>
+        <div class="p-6">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandTeal to-brandGray rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-700">Professional electrical documentation</p>
+        </div>
+        <div class="p-6">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandGray to-brandOrange rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-700">Safety-first installations</p>
+        </div>
+        <div class="p-6">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandOrange to-brandBlue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-700">Warranty & maintenance support</p>
+        </div>
+        <div class="p-6">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandBlue to-brandOrange rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-700">Nationwide project capability</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Snapshot -->
+  <section class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold mb-6">Engineering Excellence for Modern Living</h2>
+          <p class="text-xl text-gray-300 mb-8">
+            AROTECH POWER LIMITED is a professional engineering and technology company delivering compliant electrical systems, renewable energy solutions, smart automation, security systems, and digital platforms.
+          </p>
+          <p class="text-lg text-gray-400 mb-8">
+            We design, install, and maintain infrastructure that is safe, efficient, and built for modern living.
+          </p>
+          <a href="about" class="inline-flex items-center text-brandBlue font-semibold group">
+            Learn More About Arotech
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="relative">
+          <div class="bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange p-1 rounded-2xl">
+            <div class="bg-gray-800 rounded-2xl p-8">
+              <div class="grid grid-cols-2 gap-6">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brandBlue">100+</div>
+                  <div class="text-sm text-gray-400">Projects Completed</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brandOrange">5+</div>
+                  <div class="text-sm text-gray-400">Years Experience</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-brandTeal">50+</div>
+                  <div class="text-sm text-gray-400">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-white">24/7</div>
+                  <div class="text-sm text-gray-400">Support Available</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Core Services</h2>
+        <p class="text-xl text-gray-600">Comprehensive solutions for modern electrical and technology needs</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 hover-lift border border-gray-200">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandOrange to-brandBlue rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm2 2v3h4V6H6zm6 0v3h4V6h-4zm-6 5v3h4v-3H6zm6 0v3h4v-3h-4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Solar & Energy Solutions</h3>
+          <p class="text-gray-600 mb-6">Custom-designed solar and hybrid power systems that reduce dependence on grid and generators.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-brandOrange mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Residential solar installations
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-brandOrange mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Commercial solar systems
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-8 hover-lift border border-gray-200">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandTeal rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Electrical Engineering & Power Systems</h3>
+          <p class="text-gray-600 mb-6">Professional residential and commercial wiring, electrical drawings, panels, earthing, and maintenance.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-brandBlue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              House wiring (residential & commercial)
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-brandBlue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Electrical drawings and load analysis
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-8 hover-lift border border-gray-200">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandTeal to-brandGray rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Smart Homes & Automation</h3>
+          <p class="text-gray-600 mb-6">Smart systems that offer convenience, efficiency, and control for modern living spaces.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-brandTeal mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Smart lighting and switches
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-brandTeal mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Remote appliance control
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="services" class="inline-flex items-center text-brandBlue font-semibold text-lg group">
+          Explore All Services
+          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Arotech -->
+  <section class="py-20 bg-gradient-to-br from-blue-50 to-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Arotech</h2>
+        <p class="text-xl text-gray-600">Excellence in every project, from design to maintenance</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandBlue to-brandTeal rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Engineered Solutions</h3>
+          <p class="text-gray-600">Professionally documented electrical systems with detailed schematics and compliance reports.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandOrange to-brandBlue rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Code Compliance</h3>
+          <p class="text-gray-600">Full adherence to Nigerian electrical codes and international safety standards for every installation.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+          <div class="w-12 h-12 bg-gradient-to-r from-brandTeal to-brandGray rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Transparent Pricing</h3>
+          <p class="text-gray-600">Clear, upfront pricing with detailed breakdowns and no hidden costs or surprises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Build It Right?</h2>
+      <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+        Request a professional consultation today and let us bring your electrical and technology vision to life.
+      </p>
+      <a href="contact" class="bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg inline-block">
+        Request a Professional Consultation
+      </a>
+    </div>
+  </section>
+
+  <?php include __DIR__.'/includes/footer.php'; ?>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | AROTECH POWER LIMITED</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#2aa7ff',
+            brandTeal: '#2ed0f3',
+            brandGray: '#7a7a7a',
+            brandOrange: '#ff7b2e'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(90deg, #2aa7ff, #7a7a7a, #ff7b2e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hover-lift { transition: all 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <?php $current='contact'; include __DIR__.'/includes/header.php'; ?>
+
+  <main>
+    <!-- Hero Section -->
+    <!-- To use a local image, change the style below to: style="background-image: url('assets/images/contact-hero.jpg');" -->
+    <section class="relative bg-cover bg-center py-32" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Get in <span class="text-brandBlue">Touch</span>
+        </h1>
+        <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+          Let's discuss your project requirements and how we can bring your vision to life with our professional engineering solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Details -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Details</h2>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandBlue to-brandBlue/70 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">Office Address</div>
+                  <div class="text-gray-800">No. 5 Moses Somefun Street, Adekoya Estate, College Road, Ogba, Lagos.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandOrange to-brandOrange/70 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">Phone / WhatsApp</div>
+                  <a href="tel:07036682410" class="text-brandBlue hover:underline">07036682410</a>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandTeal to-brandTeal/70 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">Email</div>
+                  <a href="mailto:helpdesk.aroteck@gmail.com" class="text-brandBlue hover:underline">helpdesk.aroteck@gmail.com</a>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-brandGray to-brandGray/70 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">Website</div>
+                  <a href="https://arotech.com" target="_blank" rel="noopener" class="text-brandBlue hover:underline">arotech.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+              <a href="contact" class="bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange text-white px-6 py-3 rounded-full font-semibold hover-lift">Request a Quote</a>
+              <a href="contact" class="border-2 border-brandBlue text-brandBlue px-6 py-3 rounded-full font-semibold hover-lift hover:bg-brandBlue hover:text-white transition-colors">Book Inspection</a>
+            </div>
+          </div>
+          <!-- Form -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <?php if (isset($_GET['status'])): ?>
+              <?php if ($_GET['status'] == 'success'): ?>
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+                  <strong class="font-bold">Success!</strong>
+                  <span class="block sm:inline">Your message has been sent successfully. We will get back to you soon.</span>
+                </div>
+              <?php elseif ($_GET['status'] == 'error'): ?>
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                  <strong class="font-bold">Error!</strong>
+                  <span class="block sm:inline"><?php echo htmlspecialchars($_GET['msg'] ?? 'Something went wrong. Please try again.'); ?></span>
+                </div>
+              <?php endif; ?>
+            <?php endif; ?>
+            <form action="process_contact.php" method="POST" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                  <input type="text" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brandBlue" placeholder="Your name">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brandBlue" placeholder="you@example.com">
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                  <input type="tel" name="phone" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brandBlue" placeholder="0703...">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Service Interest</label>
+                  <select name="service" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brandBlue">
+                    <option value="Solar Solutions">Solar Solutions</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Smart Automation">Smart Automation</option>
+                    <option value="Security Systems">Security Systems</option>
+                    <option value="Digital Solutions">Digital Solutions</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea name="message" required class="w-full h-32 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brandBlue" placeholder="Tell us about your project"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-brandBlue text-white px-6 py-3 rounded-lg font-semibold hover-lift">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="mt-16 bg-gray-200 rounded-2xl overflow-hidden h-[400px]">
+          <iframe 
+            src="https://maps.google.com/maps?q=No%205%20Moses%20Somefun%20Street%2C%20Adekoya%20Estate%2C%20College%20Road%2C%20Ogba%2C%20Lagos&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <?php include __DIR__.'/includes/footer.php'; ?>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | AROTECH POWER LIMITED</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { 
+        extend: { 
+          colors: { 
+            brandBlue:'#2aa7ff', 
+            brandGray:'#7a7a7a', 
+            brandOrange:'#ff7b2e' 
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        } 
+      }
+    }
+  </script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(90deg, #2aa7ff, #7a7a7a, #ff7b2e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Navigation -->
+  <?php $current='projects'; include __DIR__.'/includes/header.php'; ?>
+
+  <!-- Hero Section -->
+  <!-- To use a local image, change the style below to: style="background-image: url('assets/images/projects-hero.jpg');" -->
+  <section class="relative bg-cover bg-center py-32" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Projects</h1>
+      <p class="text-lg text-gray-200 max-w-3xl mx-auto mb-4">
+        We have delivered electrical, solar, automation, and security projects for homes, offices, schools, churches, and commercial facilities.
+      </p>
+      <p class="text-gray-300 max-w-3xl mx-auto">
+        Each project is executed with professional documentation, quality materials, and safety compliance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Categories -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Project Categories</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-brandBlue to-brandOrange rounded-full mx-auto"></div>
+        <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+          We specialize in various types of projects across different sectors, delivering excellence in every category.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Residential -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandBlue to-brandBlue/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Residential</h3>
+          <p class="text-gray-600">
+            Home electrical installations, lighting systems, security solutions, and smart home automation for residential properties.
+          </p>
+        </div>
+
+        <!-- Commercial -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandGray to-brandGray/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Commercial</h3>
+          <p class="text-gray-600">
+            Office buildings, retail spaces, and commercial facilities with comprehensive electrical and security systems.
+          </p>
+        </div>
+
+        <!-- Institutional -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandOrange to-brandOrange/70 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Institutional</h3>
+          <p class="text-gray-600">
+            Schools, churches, hospitals, and government buildings with specialized electrical and security requirements.
+          </p>
+        </div>
+
+        <!-- Smart Automation -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandGray to-brandBlue rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Smart Automation</h3>
+          <p class="text-gray-600">
+            Advanced automation systems including lighting control, climate control, security integration, and IoT solutions.
+          </p>
+        </div>
+
+        <!-- Security Systems -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-200 hover-lift text-center">
+          <div class="w-16 h-16 bg-gradient-to-r from-brandOrange to-brandGray rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Security Systems</h3>
+          <p class="text-gray-600">
+            Comprehensive security solutions including CCTV, access control, alarm systems, and perimeter protection.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-r from-brandBlue to-brandOrange">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Let's discuss your electrical, solar, automation, or security project requirements.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact" class="bg-white text-brandBlue px-8 py-3 rounded-full font-semibold hover-lift transition-all">
+          Get Started Today
+        </a>
+        <a href="services" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover-lift transition-all">
+          View Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <?php include __DIR__.'/includes/footer.php'; ?>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
