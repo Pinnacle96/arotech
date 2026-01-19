@@ -90,6 +90,48 @@ arotech/
 └── README.md           # Project documentation
 ```
 
+## 🤝 Collaboration Guide
+
+To contribute to this project, please follow these steps:
+
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/yourusername/arotech.git
+    cd arotech
+    ```
+
+2.  **Create a New Branch**
+    Always work on a separate branch for your changes:
+    ```bash
+    git checkout -b feature/your-feature-name
+    # or for bug fixes
+    git checkout -b fix/bug-description
+    ```
+
+3.  **Make Your Changes**
+    - Implement your feature or fix.
+    - Ensure your code follows the existing style and structure.
+    - Test your changes locally to ensure everything works as expected.
+
+4.  **Commit Your Changes**
+    Write clear and descriptive commit messages:
+    ```bash
+    git add .
+    git commit -m "Add: Description of the feature added"
+    # or
+    git commit -m "Fix: Description of the bug fixed"
+    ```
+
+5.  **Push to the Repository**
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+
+6.  **Create a Pull Request (PR)**
+    - Go to the repository on GitHub.
+    - Click on "Compare & pull request".
+    - Provide a clear description of your changes and submit the PR for review.
+
 ## 🔒 Security Note
 
 - **Never commit `config.php`** or any file containing real passwords/API keys to version control.
